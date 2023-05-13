@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casino-War-Game</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="images/clubs_K.png">
 </head>
 <body>
     <!-- header -->
     <div>
-        <h1>Casino <span class="header">War</span></h1>
+        <h1>Welcome to Casino <span class="header">War!</span></h1>
     <!-- results -->
         <h3>
-            <span id="results">you won</span>
+            <span id="results"></span>
         </h3>
     </div>
     <!-- score table -->
@@ -21,27 +22,27 @@
         <table>
             <tbody style="width:50%">
                 <tr>
-                    <th>PLAYER</th>
-                    <th>TIE</th>
-                    <th>HOUSE</th>
+                    <th id="player">PLAYER</th>
+                    <th id="tie">TIE</th>
+                    <th id="house">HOUSE</th>
                 </tr>
                 <tr>
-                    <td><span id="wins">0</span></td>
-                    <td><span id="draws">0</span></td>
-                    <td><span id="losses">0</span></td>
+                    <td><span id="wins"></span></td>
+                    <td><span id="draws"></span></td>
+                    <td><span id="losses"></span></td>
                 </tr>
             </tbody>
         </table>
     </div>
     <div class="playing-row">
         <!-- player side -->
-        <div class="player">player
+        <div class="player">
             <h2>
                 <span id="player-count"></span>
             </h2>
         </div>
         <!-- house side -->
-        <div class="house">house
+        <div class="house">
             <h2>
                 <span id="house-count"></span>
             </h2>
@@ -49,7 +50,8 @@
     </div>
     <!-- buttons -->
     <div class="buttons-row">
-        <button id="hit">Hit</button>
+        <button id="player-btn">Player Hit</button>
+        <button id="house-btn">House Hit</button>
         <button id="deal">Deal</button>
         <button id="restart">Restart</button>
     </div>
@@ -62,7 +64,7 @@
             <h2 id="game-instructions">Game Instructions</h2>
           </div>
           <div class="flip-box-back">
-            <h2>Casino War game is simply played between player and the house, each player and the house will get one card and higher card wins, GOOD LUCK ;)</h2>
+            <h2>Casino War game is simply played between player and the house, use (Hit) buttons to give each player and the house one card and higher card wins, GOOD LUCK ;)</h2>
           </div>
         </div>
       </div>
